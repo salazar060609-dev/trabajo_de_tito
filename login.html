@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso de Clientes - NexusMotors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <span class="brand-logo-text">Nexus<span>Motors</span></span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#catalogo">Modelos</a>
+                <a href="index.html#comunidad">Especialistas</a>
+                <a href="index.html" class="btn-nav-back">Volver al inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección principal del Login / Registro -->
+    <main class="login-section">
+        <div class="login-wrapper">
+            <div class="login-card">
+                <div class="login-header">
+                    <span class="login-badge">Portal de Clientes</span>
+                    <h1>Cuenta NexusMotors</h1>
+                    <p>Accede para consultar el historial de servicios de tu moto y estatus de refacciones</p>
+                </div>
+
+                <div class="auth-tabs">
+                    <button type="button" class="auth-tab">Iniciar Sesión</button>
+                    <button type="button" class="auth-tab active">Crear Cuenta</button>
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="form-group-margin">
+                        <label for="nombre" class="login-label">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control-input" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="email" class="login-label">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control-input" placeholder="cliente@nexusmotors.com" required>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="moto" class="login-label">Motocicleta que posees (opcional)</label>
+                        <input type="text" id="moto" name="moto" class="form-control-input" placeholder="Ej. Yamaha MT-03 / Honda CB190R">
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="password" class="login-label">Contraseña</label>
+                        <input type="password" id="password" name="password" class="form-control-input" placeholder="Mínimo 8 caracteres" required>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="terminos" class="form-checkbox-input" required>
+                        <label for="terminos" class="form-checkbox-label">
+                            Acepto las políticas de garantía de agencia y aviso de privacidad.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Registrar Cuenta</button>
+                </form>
+
+                <div class="login-divider">
+                    <span>o accede con</span>
+                </div>
+
+                <div class="social-login-grid">
+                    <button type="button" class="btn-social-auth">Google</button>
+                    <button type="button" class="btn-social-auth">Apple ID</button>
+                </div>
+
+                <p class="login-footer-text">
+                    ¿Ya estás registrado? <a href="#">Inicia sesión aquí</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>NexusMotors Concesionario de Motocicletas © 2026</p>
+                <p class="footer-author">Desarrollado por: mancera tito christian emiliano (5A PRO VESP)</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://discord.com" target="_blank" class="social-link-text">WhatsApp</a>
+                <a href="https://twitch.tv" target="_blank" class="social-link-text">Facebook</a>
+                <a href="https://youtube.com" target="_blank" class="social-link-text">YouTube</a>
+                <a href="https://twitter.com" target="_blank" class="social-link-text">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

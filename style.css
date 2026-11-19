@@ -1,0 +1,1032 @@
+/* ======================================================================
+   ESTILOS GENERALES Y PORTADA - NEXUSMOTORS (ESTILO METÁLICO)
+   ====================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #e5e7eb;
+    /* Fondo con textura metálica oscura / acero cepillado */
+    background: linear-gradient(135deg, #0b0c10 0%, #1f2833 50%, #0b0c10 100%);
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------
+   BARRA SUPERIOR DE CONTACTO
+   -------------------------------------------------------------------- */
+.top-bar {
+    background-color: #050608;
+    color: #9ca3af;
+    font-size: 0.82rem;
+    padding: 0.55rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-contacts {
+    display: flex;
+    gap: 2rem;
+}
+
+.top-item strong {
+    color: #ffffff;
+}
+
+.top-item.whatsapp {
+    color: #ef4444;
+}
+
+/* ======================================================================
+   BARRA DE NAVEGACIÓN RESPONSIVA (Efecto Cromo / Metálico)
+   ====================================================================== */
+.navbar {
+    background: linear-gradient(180deg, #181b22 0%, #111318 100%);
+    border-bottom: 1px solid rgba(192, 192, 192, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.9rem 1.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.brand-logo-text {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #f3f4f6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-logo-text span {
+    color: #dc2626; /* Rojo deportivo tipo pinza de freno Brembo */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ef4444;
+}
+
+.btn-nav-login {
+    background: linear-gradient(135deg, #2b303c 0%, #1a1d24 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff !important;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.btn-nav-login:hover {
+    border-color: #dc2626;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0.6rem 1rem;
+    }
+    .nav-container {
+        justify-content: center;
+    }
+    .nav-links {
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+/* --------------------------------------------------------------------
+   SECCIÓN HERO (DOS COLUMNAS - ESTILO PISTA / AGENCIA)
+   -------------------------------------------------------------------- */
+.hero-section {
+    background: radial-gradient(circle at 20% 30%, rgba(220, 38, 38, 0.12), transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.1), transparent 45%),
+                linear-gradient(135deg, #0e1017 0%, #161922 100%);
+    color: white;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: rgba(220, 38, 38, 0.15);
+    border: 1px solid rgba(220, 38, 38, 0.4);
+    color: #f87171;
+    padding: 5px 14px;
+    border-radius: 3px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+}
+
+.hero-text-side h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 1.18;
+    color: #ffffff;
+}
+
+.hero-text-side p {
+    font-size: 1.05rem;
+    color: #9ca3af;
+    margin-bottom: 2rem;
+    line-height: 1.65;
+}
+
+.hero-cta-box {
+    background: linear-gradient(135deg, #141720 0%, #0d0f14 100%);
+    border: 1px solid #282e3d;
+    border-left: 3px solid #dc2626;
+    padding: 1.8rem;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn-orange {
+    display: inline-block;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    padding: 13px 26px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.98rem;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-orange:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+}
+
+.hero-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.88rem;
+    color: #d1d5db;
+    font-weight: 500;
+}
+
+.hero-benefits span {
+    position: relative;
+    padding-left: 14px;
+}
+
+.hero-benefits span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #dc2626;
+}
+
+/* Estilos del Collage con marco metálico oscuro */
+.image-collage {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: linear-gradient(145deg, #141720, #0a0c10);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #2a3142;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.collage-main img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px;
+    filter: contrast(1.05);
+}
+
+.collage-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.collage-sub img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.hero-title-custom {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-desc-custom {
+    color: #9ca3af;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle-custom {
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #93c5fd;
+    margin-bottom: 0.9rem;
+}
+
+.hero-benefits-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Tarjeta del Formulario (Estilo panel de instrumentos / aluminio oscuro) */
+.cbtis-hero-form-card {
+    background: linear-gradient(145deg, #13161f, #0b0d13);
+    border: 1px solid #272f42;
+    padding: 2.2rem;
+    border-radius: 8px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.form-card-title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.form-group-margin {
+    margin-bottom: 1rem;
+}
+
+.form-control-input,
+.form-control-select,
+.form-control-date,
+.form-control-textarea {
+    width: 100%;
+    background-color: #1a1e29;
+    border: 1px solid #323b52;
+    color: #f3f4f6;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control-select {
+    color: #d1d5db;
+}
+
+.form-date-label {
+    font-size: 0.78rem;
+    color: #9ca3af;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-control-textarea {
+    font-family: inherit;
+}
+
+.form-group-checkbox {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-checkbox-input {
+    width: 17px !important;
+    height: 17px !important;
+    min-width: 17px;
+    cursor: pointer;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: #dc2626;
+}
+
+.form-checkbox-label {
+    font-size: 0.8rem !important;
+    color: #9ca3af !important;
+    line-height: 1.35 !important;
+    cursor: pointer;
+    display: inline-block !important;
+    width: auto !important;
+    flex: 1;
+}
+
+.form-submit-btn {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    width: 100%;
+    border-radius: 4px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+    transition: opacity 0.2s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-submit-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.cbtis-hero-form-card input:focus,
+.cbtis-hero-form-card select:focus,
+.cbtis-hero-form-card textarea:focus,
+.login-card input:focus,
+.login-card select:focus {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.25);
+}
+
+/* ======================================================================
+   ESTILOS DE CATÁLOGO / SECCIÓN DE MOTOS
+   ====================================================================== */
+.careers-section {
+    padding: 5rem 2rem;
+    background-color: #0d0e14;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.15rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.section-header p {
+    color: #9ca3af;
+    font-size: 1.02rem;
+}
+
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.career-card {
+    background: linear-gradient(145deg, #141720, #0c0e14);
+    border: 1px solid #222836;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(220, 38, 38, 0.2);
+    border-color: #dc2626;
+}
+
+.career-img-container {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border-bottom: 2px solid #dc2626;
+}
+
+.career-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.career-card:hover .career-img-container img {
+    transform: scale(1.05);
+}
+
+.career-content {
+    padding: 1.6rem;
+}
+
+.career-content h3 {
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+}
+
+.career-content p {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+/* ======================================================================
+   ESTILOS DE LA SECCIÓN MULTIMEDIA (VIDEO Y MAPA)
+   ====================================================================== */
+.multimedia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.multimedia-card {
+    background: linear-gradient(145deg, #141720, #0c0e14);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid #252e42;
+}
+
+.multimedia-card h3 {
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-left: 3px solid #dc2626;
+    padding-left: 10px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+    .multimedia-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ======================================================================
+   ESTILOS Y CARRUSEL DE ESPECIALISTAS / MECÁNICOS
+   ====================================================================== */
+.teachers-section {
+    background: linear-gradient(135deg, #0b0d14 0%, #151824 100%);
+    color: white;
+    padding: 4.5rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.teachers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.teachers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.teachers-header h2 {
+    font-size: 2.15rem;
+    font-weight: 800;
+    margin-top: 0.3rem;
+    color: #ffffff;
+}
+
+.teachers-header p {
+    color: #9ca3af;
+    font-size: 1rem;
+    max-width: 700px;
+    margin-top: 0.5rem;
+}
+
+.teachers-tag {
+    color: #93c5fd;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.teachers-nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: #171b26;
+    border: 1px solid #323b52;
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+.teachers-grid {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+    scrollbar-width: none;
+}
+
+.teachers-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.teacher-card {
+    min-width: 280px;
+    flex: 0 0 280px;
+    background: linear-gradient(145deg, #141720, #0c0e14);
+    border: 1px solid #222836;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.teacher-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.teacher-info {
+    padding: 1.5rem;
+}
+
+.teacher-info h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+.teacher-info p {
+    font-size: 0.86rem;
+    color: #9ca3af;
+    line-height: 1.45;
+}
+
+/* ======================================================================
+   ESTILOS DE MARCAS DE MOTOS (MARQUESINAS)
+   ====================================================================== */
+.convenios-section {
+    padding: 5rem 0;
+    background-color: #0b0c10;
+    overflow: hidden;
+}
+
+.convenience-tag-custom {
+    text-align: center;
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.marquee-wrapper-spacing {
+    margin-top: 1.4rem;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 1.4rem;
+    width: max-content;
+}
+
+.marquee-track-top {
+    animation: scrollLeft 35s linear infinite;
+}
+
+.marquee-track-bottom {
+    animation: scrollRight 35s linear infinite;
+}
+
+.convenio-card {
+    background: linear-gradient(135deg, #151924, #0f1118);
+    border: 1px solid #273045;
+    border-left: 3px solid #dc2626;
+    padding: 0.95rem 2rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    letter-spacing: 0.3px;
+    color: #e5e7eb;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.marquee-track-bottom .convenio-card {
+    border-left-color: #3b82f6;
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+/* ======================================================================
+   ESTILOS DEL PIE DE PÁGINA (FOOTER)
+   ====================================================================== */
+.footer {
+    background-color: #050608;
+    color: #9ca3af;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    margin-bottom: 0.3rem;
+}
+
+.footer-author {
+    font-size: 0.82rem;
+    color: #6b7280;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 14px;
+}
+
+.social-link-text {
+    padding: 7px 14px;
+    background: #141720;
+    border: 1px solid #2b3346;
+    color: #e5e7eb;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.82rem;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.social-link-text:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+    .teachers-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-text-side h1 {
+        font-size: 2.15rem;
+    }
+}
+
+/* ======================================================================
+   ESTILOS DE PÁGINA DE LOGIN / REGISTRO
+   ====================================================================== */
+.login-section {
+    min-height: calc(100vh - 150px);
+    background: radial-gradient(circle at top right, rgba(220, 38, 38, 0.12), transparent 45%),
+                radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.1), transparent 45%),
+                linear-gradient(135deg, #0b0c10 0%, #161922 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-card {
+    background: linear-gradient(145deg, #141720, #0c0e14);
+    border: 1px solid #283044;
+    border-radius: 8px;
+    padding: 2.5rem 2.2rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.85);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.login-badge {
+    display: inline-block;
+    background-color: rgba(220, 38, 38, 0.15);
+    border: 1px solid rgba(220, 38, 38, 0.4);
+    color: #f87171;
+    padding: 4px 12px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.8rem;
+}
+
+.login-header h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+}
+
+.login-header p {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.auth-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #1a1e29;
+    padding: 4px;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #323b52;
+}
+
+.auth-tab {
+    background: transparent;
+    border: none;
+    color: #9ca3af;
+    padding: 8px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.auth-tab.active {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: #ffffff;
+}
+
+.login-label {
+    display: block;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: #d1d5db;
+    margin-bottom: 0.4rem;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.4rem;
+    font-size: 0.82rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #9ca3af;
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.forgot-link:hover {
+    color: #ef4444;
+    text-decoration: underline;
+}
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #6b7280;
+    font-size: 0.8rem;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #2d3748;
+}
+
+.login-divider span {
+    padding: 0 12px;
+}
+
+.social-login-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.btn-social-auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1e29;
+    border: 1px solid #323b52;
+    color: #e5e7eb;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.btn-social-auth:hover {
+    border-color: #3b82f6;
+    background-color: #222836;
+}
+
+.login-footer-text {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.login-footer-text a {
+    color: #ef4444;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-footer-text a:hover {
+    text-decoration: underline;
+}
+
+.btn-nav-back {
+    background-color: #171b26;
+    border: 1px solid #323b52;
+    color: #e5e7eb !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.btn-nav-back:hover {
+    border-color: #dc2626;
+    background-color: #222836;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 2rem 1.4rem;
+    }
+    .social-login-grid {
+        grid-template-columns: 1fr;
+    }
+}

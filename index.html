@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titoMotors - Concesionario y Taller Oficial de Motocicletas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR DE CONTACTO -->
+    <div class="top-bar" id="inicio">
+        <div class="top-bar-container">
+            <div class="top-contacts">
+                <span class="top-item">Atención a clientes y refacciones vía <strong>WhatsApp</strong></span>
+                <span class="top-item whatsapp">Asesoría de financiamiento disponible en <strong>Línea</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#inicio">
+                    <span class="brand-logo-text">Tito<span>Motors</span></span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Modelos</a>
+                <a href="#comunidad">Especialistas</a>
+                <a href="#multimedia">Showroom</a>
+                <a href="login.html" class="btn-nav-login">Iniciar Sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO: DOS COLUMNAS -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-text-side">
+                <span class="hero-tag">Nueva Colección 2026</span>
+                <h1>El Poder y la Libertad sobre Dos Ruedas</h1>
+                <p>Explora nuestra gama exclusiva de motocicletas deportivas, doble propósito, urbanas y chopper. Encuentra tu modelo ideal, cotiza refacciones originales y agenda tu servicio técnico.</p>
+                
+                <div class="hero-cta-box">
+                    <a href="#catalogo" class="btn-orange">Ver Catálogo de Motos</a>
+                    <div class="hero-benefits">
+                        <span>Garantía oficial de agencia</span>
+                        <span>Planes de financiamiento a tu medida</span>
+                        <span>Taller certificado multimarca</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collage de imágenes adaptado a motocicletas -->
+            <div class="hero-image-side">
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="img/moto1.jpg" alt="Motocicleta Deportiva de Alta Cilindrada">
+                    </div>
+                    <div class="collage-sub">
+                        <img src="img/taller.jpg" alt="Taller Mecánico Especializado">
+                        <img src="img/cascos.jpg" alt="Cascos y Accesorios de Seguridad">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CATÁLOGO / TIPOS DE MOTOS -->
+    <section id="catalogo" class="careers-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Categorías de Motocicletas</h2>
+                <p>Diseñadas para cada estilo de conducción y aventura en carretera o ciudad</p>
+            </div>
+
+            <div class="careers-grid">
+                
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/moto2.jpg" alt="Motos Deportivas">
+                    </div>
+                    <div class="career-content">
+                        <h3>Deportivas y Pista</h3>
+                        <p>Aerodinámica extrema, motores de alta potencia y respuesta inmediata para máxima adrenalina.</p>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/moto3.jpg" alt="Motos Doble Propósito">
+                    </div>
+                    <div class="career-content">
+                        <h3>Doble Propósito / Adventure</h3>
+                        <p>Versatilidad total para carretera y caminos difíciles. Suspensión reforzada y gran autonomía.</p>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/moto4.jpg" alt="Motos Chopper y Cruiser">
+                    </div>
+                    <div class="career-content">
+                        <h3>Cruiser y Chopper</h3>
+                        <p>Estilo clásico inconfundible, comodidad superior para viajes largos y torque poderoso en bajas revoluciones.</p>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/moto5.jpg" alt="Motos Urbanas y Scooters">
+                    </div>
+                    <div class="career-content">
+                        <h3>Urbanas y Scooters</h3>
+                        <p>Eficiencia de combustible insuperable, agilidad en el tráfico diario y fácil mantenimiento.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <!-- SECCIÓN DE CREADORES E INGENIEROS REALES DE MOTOS -->
+    <section id="comunidad" class="teachers-section">
+        <div class="teachers-container">
+            
+            <div class="teachers-header">
+                <div>
+                    <span class="teachers-tag">Ingeniería y Legado Real</span>
+                    <h2>Diseñadores e Ingenieros de Leyenda</h2>
+                    <p>Las mentes reales y figuras históricas que fundaron las marcas y diseñaron la ingeniería mecánica del motociclismo mundial[cite: 2]:</p>
+                </div>
+                <div class="teachers-nav-buttons">
+                    <button id="btn-prev" class="nav-btn" aria-label="Anterior">‹</button>
+                    <button id="btn-next" class="nav-btn" aria-label="Siguiente">›</button>
+                </div>
+            </div>
+
+            <div class="teachers-grid" id="teachers-track">
+                
+                <!-- Persona Real 1 -->
+                <div class="teacher-card">
+                    <img src="img/creador1.jpg" alt="Soichiro Honda">
+                    <div class="teacher-info">
+                        <h3>Soichiro Honda</h3>
+                        <p>Fundador real de Honda Motor Co[cite: 2]. Ingeniero mecánico y empresario que transformó la industria mundial de las dos ruedas.</p>
+                    </div>
+                </div>
+
+                <!-- Persona Real 2 -->
+                <div class="teacher-card">
+                    <img src="img/creador2.jpg" alt="Massimo Tamburini">
+                    <div class="teacher-info">
+                        <h3>Massimo Tamburini</h3>
+                        <p>Legendario diseñador industrial italiano[cite: 2]. Creador de la mítica Ducati 916 y la MV Agusta F4, consideradas obras de arte.</p>
+                    </div>
+                </div>
+
+                <!-- Persona Real 3 -->
+                <div class="teacher-card">
+                    <img src="img/creador3.jpg" alt="Burt Munro">
+                    <div class="teacher-info">
+                        <h3>Burt Munro</h3>
+                        <p>Piloto e inventor neozelandés[cite: 2]. Famoso mundialmente por romper el récord de velocidad en una Indian clásica modificada en 1967.</p>
+                    </div>
+                </div>
+
+                <!-- Persona Real 4 -->
+                <div class="teacher-card">
+                    <img src="img/creador4.jpg" alt="Miguel Galluzzi">
+                    <div class="teacher-info">
+                        <h3>Miguel Galluzzi</h3>
+                        <p>Diseñador argentino de motocicletas[cite: 2]. Creador del concepto de las motos "Naked" y de la icónica familia Ducati Monster.</p>
+                    </div>
+                </div>
+
+                <!-- Persona Real 5 -->
+                <div class="teacher-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Tadao Baba">
+                    <div class="teacher-info">
+                        <h3>Tadao Baba</h3>
+                        <p>Ingeniero jefe de desarrollo en Honda[cite: 2]. Padre y mente maestra detrás de la revolucionaria saga de superdeportivas Fireblade.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- SECCIÓN MULTIMEDIA: VIDEO Y MAPA -->
+    <section id="multimedia" class="careers-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="teachers-tag">Experiencia NexusMotors</span>
+                <h2>Prueba de Pista y Ubicación del Showroom</h2>
+                <p>Conoce a fondo las capacidades de nuestros modelos estelares y visítanos en nuestra sucursal matriz.</p>
+            </div>
+
+            <div class="multimedia-grid">
+                
+                <div class="multimedia-card">
+                    <h3>Reseña y Prueba en Pista</h3>
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/PL-uM4dHuDc?si=AqMfXjAqAw0_y9m6" title="Prueba de Motocicletas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="multimedia-card">
+                    <h3>Sucursal Matriz y Taller</h3>
+                    <div class="iframe-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.4539824045!2d-99.2312!3d18.8923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDUzJzMyLjMiTiA5OcKwMTMnNTIuMyJX!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx" title="Ubicación Agencia" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE COTIZACIÓN Y REGISTRO (10 CAMPOS) -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-text-side">
+                <span class="hero-tag">Cotización Rápida</span>
+                <h1 class="hero-title-custom">Agenda tu Prueba de Manejo</h1>
+                <p class="hero-desc-custom">
+                    Llena el formulario para apartar tu modelo preferido, solicitar una cotización con planes de crédito o agendar servicio preventivo en taller.
+                </p>
+                
+                <div class="hero-subtitle-custom">
+                    Beneficios al registrarte
+                </div>
+                <div class="hero-benefits hero-benefits-column">
+                    <span>Prueba de manejo sin costo en sucursal</span>
+                    <span>Descuento especial en tu primer servicio de mantenimiento</span>
+                    <span>Asesoría personalizada con planes de financiamiento</span>
+                    <span>Invitación a rodadas y eventos exclusivos del club</span>
+                </div>
+            </div>
+
+            <div class="hero-form-side">
+                <div class="cbtis-hero-form-card">
+                    
+                    <h3 class="form-card-title">
+                        Solicitud de Información
+                    </h3>
+
+                    <form id="form-hero-informes" action="#" method="POST">
+                        
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="text" id="info_nombre" name="nombre" required placeholder="Nombre completo" class="form-control-input">
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="text" id="info_telefono" name="telefono" required placeholder="Número de teléfono / WhatsApp" class="form-control-input">
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="email" id="info_email" name="email" required placeholder="Correo electrónico" class="form-control-input">
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <select id="info_interes" name="interes" required class="form-control-select">
+                                <option value="">¿Qué servicio te interesa?</option>
+                                <option value="compra">Compra de motocicleta nueva</option>
+                                <option value="financiamiento">Cotizar financiamiento / Crédito</option>
+                                <option value="taller">Agendar cita en taller mecánico</option>
+                                <option value="refacciones">Refacciones y accesorios</option>
+                            </select>
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <select id="info_modelo" name="modelo" required class="form-control-select">
+                                <option value="">Selecciona categoría de interés</option>
+                                <option value="deportiva">Deportiva y Pista</option>
+                                <option value="adventure">Doble Propósito / Adventure</option>
+                                <option value="cruiser">Cruiser y Chopper</option>
+                                <option value="urbana">Urbana y Scooter</option>
+                            </select>
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <label for="info_fecha" class="form-date-label">Fecha preferida para visita:</label>
+                            <input type="date" id="info_fecha" name="fecha" required class="form-control-date">
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <textarea id="info_comentarios" name="comentarios" rows="2" placeholder="Comentarios adicionales o dudas específicas..." class="form-control-textarea"></textarea>
+                        </div>
+
+                        <div class="cbtis-input-group form-group-checkbox">
+                            <input type="checkbox" id="info_terminos" name="terminos" required class="form-checkbox-input">
+                            <label for="info_terminos" class="form-checkbox-label">
+                                Acepto el aviso de privacidad y recibir información comercial de NexusMotors.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="cbtis-btn-ingresar form-submit-btn">
+                            Enviar Solicitud
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MARQUESINA DE MARCAS DE MOTOS -->
+    <section class="convenios-section">
+        <div class="convenios-container">
+            
+            <div class="section-header">
+                <span class="teachers-tag convenience-tag-custom">Marcas Aliadas</span>
+                <h2>Fabricantes y Refacciones Autorizadas</h2>
+                <p>Trabajamos directamente con las marcas líderes mundiales en la industria del motociclismo.</p>
+            </div>
+
+            <div class="marquee-wrapper">
+                <div class="marquee-track marquee-track-top">
+                    <div class="convenio-card">Yamaha Motor</div>
+                    <div class="convenio-card">Honda Powersports</div>
+                    <div class="convenio-card">Kawasaki Racing</div>
+                    <div class="convenio-card">Suzuki Motorcycles</div>
+                    <div class="convenio-card">Ducati Corse</div>
+                    <div class="convenio-card">BMW Motorrad</div>
+                    <div class="convenio-card">KTM Ready to Race</div>
+                    <div class="convenio-card">Harley-Davidson</div>
+                    <!-- Duplicado infinito -->
+                    <div class
